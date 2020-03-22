@@ -18,8 +18,12 @@
     </div>
 </header>
 
-<input type="text" id="input" name="Regular Expression" required
+<input type="text" id="input" name="reg" required
        minlength="2" maxlength="16" size="10">
-<input type="text" id="textarea" name="Test Area here!" required
-       minlength="1" maxlength="100" size="50">
-<button onclick="highlight()">Parse</button>
+<textarea>
+String
+</textarea>
+<p id="result"></p>
+					
+<button onclick="highlight(this.reg.value)">Parse</button>
+                        
