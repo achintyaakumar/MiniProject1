@@ -1,13 +1,14 @@
-var result = document.querySelector('#result');
-var expression = document.querySelector('#input');
-var text = document.querySelector('#textarea');
-
+/*eslint-env browser*/
 document.getElementById("button").addEventListener("click", highlight);
 
-function highlight(){
+function highlight() {
+    var result = document.querySelector('#result');
+    var expression = document.getElementById('input').value;
+    var text = document.getElementById('textarea').value;
+    alert(expression);
     if (text.match(expression)) {
-    result.innerHTML = 'The phone number is <strong>valid!</strong>';
+        result.innerHTML = 'The phone number is <strong>valid!</strong>';
   } else {
-    result.innerHTML = 'The phone number is <strong>invalid!</strong>';
+        result.innerHTML = 'The phone number is <strong>invalid!</strong>';
   }
 }
