@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
 </head>
 
 <header class="masthead">
@@ -17,13 +17,17 @@
         <p>This is a website for parsing regular expressions!<p>
     </div>
 </header>
-
+    
+<body>
 <input type="text" id="input" name="reg" required
-       minlength="2" maxlength="16" size="10">
-<textarea>
+       minlength="2" maxlength="16" size="20">
+<textarea id="textarea">
 String
 </textarea>
-<p id="result"></p>
 					
-<button onclick="highlight(this.reg.value)">Parse</button>
-                        
+<button id="button" onclick="highlight()">Parse</button>
+    
+<p id="result"></p>
+    
+<script src="regex.js"></script>                       
+</body>
