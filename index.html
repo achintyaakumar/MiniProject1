@@ -3,11 +3,23 @@
 
 <head>
     <title>Regular Expression Assistant</title>
-    <link rel="stylesheet" type="text/css" href="mini.css">
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
 <header class="masthead">
     <div id="title">Regular Expression Assistant</div>
+    <div id="about">
+        <p>This is a website for parsing regular expressions!<p>
+    </div>
 </header>
 
-
+<input type="text" id="input" name="Regular Expression" required
+       minlength="2" maxlength="16" size="10">
+<input type="text" id="textarea" name="Test Area here!" required
+       minlength="1" maxlength="100" size="50">
+<button onclick="highlight()">Parse</button>
