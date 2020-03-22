@@ -1,0 +1,26 @@
+.light {
+	background: yellow;
+	font-weight : bold;
+}
+#title{
+    font-size: 40px;
+    color: black;
+    text-align: center;
+}
+#about {
+    font: 24px;
+    color: black;
+    text-align: center;
+}
+#button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+}

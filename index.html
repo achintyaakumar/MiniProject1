@@ -6,8 +6,9 @@
     
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <script type="text/javascript" src="regex.js"></script>     
+    
+    <script type="text/javascript" src="regex.js"></script>  
+    <link rel="stylesheet" type="text/css" href="reg.css">
 </head>
 
 <header class="masthead">
@@ -18,13 +19,13 @@
 </header>
     
 <body>
-<input type="text" id="input" name="reg" required
-       minlength="2" maxlength="16" size="20">
-<textarea id="textarea" required>
-String
+<input type="text" id="input" name="reg" required placeholder="Enter regex expression"
+       minlength="2" maxlength="16" size="20" >
+<textarea id="textarea" required placeholder="Enter string here">
+
 </textarea>
 					
-<button id="button" onclick="highlight()">Parse</button>
+    <br><button id="button" onclick="highlight()">Parse</button>
     
 <p id="result"></p>
                       
