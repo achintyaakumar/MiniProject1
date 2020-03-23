@@ -19,14 +19,12 @@
 </header>
     
 <body>
-<input type="text" id="input" name="reg" required placeholder="Enter regex expression"
-       minlength="2" maxlength="16" size="20" >
-<textarea id="textarea" required placeholder="Enter string here">
-
-</textarea>
+<input type="text" id="input" name="reg" required placeholder="Enter regular expression here"
+       minlength="2" maxlength="50" size="110" >
+<br><textarea id="textarea" required rows="5" cols="100" placeholder="Enter string here"></textarea>
 					
-    <br><button id="button" onclick="highlight()">Parse</button>
-    
+<br><button id="button" onclick="highlight()">Parse</button>
+<br><h3>The result of parsing your regex on the input text you've provided: </h3><br>  
 <p id="result"></p>
                       
 </body>
